@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".ProductActivity2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/base">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:background="@color/teal_200">
+
+        <ImageButton
+            android:id="@+id/ibt_product_home_page_cart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ibt_product_home_page_menu"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="129dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/furnico"
+            app:layout_constraintEnd_toStartOf="@+id/ibt_product_home_page_cart"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toEndOf="@+id/ibt_product_home_page_menu"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <SearchView
+            android:id="@+id/product_search"
+            android:layout_width="323dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+           android:background="@color/base"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_productImage"
+                android:layout_width="253dp"
+                android:layout_height="253dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/txt_ProductName"
+                android:layout_width="225dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:text="ProductName"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_productImage" />
+
+            <TextView
+                android:id="@+id/txt_Category"
+                android:layout_width="225dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:text="Category"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_ProductName" />
+
+            <Button
+                android:id="@+id/btn_addToCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Addtocart"
+                app:layout_constraintEnd_toEndOf="@+id/txt_price"
+                app:layout_constraintStart_toStartOf="@+id/txt_price"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price" />
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="221dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:text="Price"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/txt_Category"
+                app:layout_constraintStart_toStartOf="@+id/txt_Category"
+                app:layout_constraintTop_toBottomOf="@+id/txt_Category" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="258dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="32dp"
+                android:text="Description"
+                app:layout_constraintEnd_toEndOf="@+id/btn_addToCart"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="@+id/btn_addToCart"
+                app:layout_constraintTop_toBottomOf="@+id/btn_addToCart" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="250dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_merchantCard_merchantName"
+            android:layout_width="140dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:text="Name"
+            app:layout_constraintStart_toEndOf="@+id/tv__merchantCard_merchantName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_merchantCard_rating"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:hint="rating"
+            android:text="rating"
+            app:layout_constraintStart_toEndOf="@+id/iv_merchantCard_ratingImg"
+            app:layout_constraintTop_toBottomOf="@+id/tv__merchantCard_merchantName" />
+
+        <TextView
+            android:id="@+id/tv__merchantCard_merchantName"
+            android:layout_width="138dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="40dp"
+            android:text="Merchant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_merchantCard_ratingImg"
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv__merchantCard_merchantName"
+            app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:id="@+id/tv_merchantCard_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="24dp"
+            android:text="Price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_merchantCard_ratingImg" />
+
+        <TextView
+            android:id="@+id/tv_merchantCard_amouuntTobeAdded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="24dp"
+            android:text="Amounttobe shown"
+            app:layout_constraintStart_toEndOf="@+id/tv_merchantCard_price"
+            app:layout_constraintTop_toBottomOf="@+id/tv_merchantCard_rating" />
+
+        <Button
+            android:id="@+id/iv_merchantCard_BuyButton"
+            android:layout_width="89dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="88dp"
+            android:text="Buy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_merchantCard_merchantName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+
+
